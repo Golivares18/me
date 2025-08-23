@@ -1,0 +1,43 @@
+body {
+    background-color: #b9df7d;
+    
+}
+
+.header, .intro, .learn, .fun, .hobby {
+    background-color: #ffffff;
+    border-color: #030303;
+    border-radius: 10px;
+    border-width: 4px;
+    border-style: groove;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    width: 80%;
+    margin-left: 10%;
+    overflow: hidden;
+    animation: sequence;
+    animation-duration: 1s;
+    display: grid;
+
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+
+}
+
+ul, li {
+    text-align: center;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+@keyframes sequence {
+    0% { opacity: 0; background-color: #b9df7d;}
+    100% { opacity: 1;}
+}
