@@ -1,43 +1,57 @@
 body {
     background-color: #b9df7d;
+    background: linear-gradient(90deg, #000000, #4e1111ef);
+    height: 100vh;
+    width: 100%;
     
 }
 
 .header, .intro, .learn, .fun, .hobby {
-    background-color: #ffffff;
-    border-color: #030303;
-    border-radius: 10px;
-    border-width: 4px;
+    background-color: #323232;
     border-style: groove;
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: consolas;
     font-style: italic;
     width: 80%;
     margin-left: 10%;
     overflow: hidden;
     animation: sequence;
-    animation-duration: 1s;
-    display: grid;
+    animation-duration: 1s; 
+    border-image: linear-gradient(45deg,#000000,#f80ad0,#e00707) 1; 
+    animation: gradient-border 2s infinite;
+    border: 10p;
+}
 
+.header {
+    width: 40%;
+    margin-left: 30%;
 }
 
 h1 {
     font-size: 20px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 p {
     font-size: 16px;
-
+    color: #ffffff;
 }
 
 ul, li {
     text-align: center;
     list-style-type: square;
     list-style-position: inside;
+    color: #ffffff;
 }
 
 @keyframes sequence {
     0% { opacity: 0; background-color: #b9df7d;}
     100% { opacity: 1;}
+}
+
+@keyframes gradient-border {
+    0% {border-image-source: linear-gradient(45deg,#000000,#1003be,#e00707)}
+    50% {border-image-source: linear-gradient(45deg,#1003be,#e00707,#000000) }
+    100% {border-image-source: linear-gradient(45deg,#e00707,#000000,#1003be) }
 }
